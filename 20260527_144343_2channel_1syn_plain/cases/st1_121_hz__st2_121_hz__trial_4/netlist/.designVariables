@@ -1,0 +1,6 @@
+parameters \
+    pwlFile_st2="/home/s5117909/Documents/thesis/thesis_codebase/processing/sim_run_code/spike_train_output/st_2/121_hz/trial_4.pwl" \
+    pwlFile_st1="/home/s5117909/Documents/thesis/thesis_codebase/processing/sim_run_code/spike_train_output/st_1/121_hz/trial_4.pwl" \
+    vmax=1.8 Vw=0.5 Vthr=0.9 Vtau=1.6 Vin=0 T=0.001 pw=0.0001 m5w=2.1e-06 \
+    m5l=1.05e-06 m4wtb=2.1e-06 m4w=2.1e-06 m4ltb=1.05e-06 m4l=1.05e-06 \
+    m3w=2.1e-06 m3l=4e-06 m2wtb=2.1e-06 m2w=3e-06 m2ltb=1.05e-06 m2l=2e-07

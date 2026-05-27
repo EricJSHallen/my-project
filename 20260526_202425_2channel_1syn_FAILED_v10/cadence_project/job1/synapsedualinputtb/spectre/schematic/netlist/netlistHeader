@@ -1,0 +1,8 @@
+// Generated for: spectre
+// Generated on: May 26 20:26:15 2026
+// Design library name: sebastian_thesis_pilot
+// Design cell name: synapsedualinputtb
+// Design view name: schematic
+simulator lang=spectre
+include "ade_e.scs"
+global 0

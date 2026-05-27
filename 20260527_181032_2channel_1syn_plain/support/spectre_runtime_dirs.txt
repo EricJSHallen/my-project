@@ -1,0 +1,1 @@
+/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/bin/64bit

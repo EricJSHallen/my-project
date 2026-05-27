@@ -1,0 +1,8 @@
+  34 /home/s5117909/Documents/thesis/thesis_codebase/thesis_database/20260527_181032_2channel_1syn_plain/import_template.sh
+   8 /home/s5117909/Documents/thesis/thesis_codebase/thesis_database/20260527_181032_2channel_1syn_plain/monitoring_commands.sh
+  92 /home/s5117909/Documents/thesis/thesis_codebase/thesis_database/20260527_181032_2channel_1syn_plain/refresh_spectre_runtime.sh
+  11 /home/s5117909/Documents/thesis/thesis_codebase/thesis_database/20260527_181032_2channel_1syn_plain/run_all_workers.sh
+  70 /home/s5117909/Documents/thesis/thesis_codebase/thesis_database/20260527_181032_2channel_1syn_plain/run_spectre_worker.sh
+   6 /home/s5117909/Documents/thesis/thesis_codebase/thesis_database/20260527_181032_2channel_1syn_plain/run_template_ocean.sh
+  36 /home/s5117909/Documents/thesis/thesis_codebase/thesis_database/20260527_181032_2channel_1syn_plain/setup_spectre_env.sh
+ 257 total

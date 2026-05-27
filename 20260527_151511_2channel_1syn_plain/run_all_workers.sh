@@ -6,6 +6,8 @@ source "$RUN_DIR/RUNINFO.txt"
 source "$RUN_DIR/setup_spectre_env.sh"
 
 echo "Using SPECTRE_BIN=$SPECTRE_BIN"
+echo "Runtime missing libs, if any:"
+check_spectre_runtime || true
 for j in $(seq 0 $((NUM_JOBS - 1))); do
   ./run_spectre_worker.sh "$j" &
 done

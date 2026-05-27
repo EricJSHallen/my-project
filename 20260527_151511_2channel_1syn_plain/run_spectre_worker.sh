@@ -16,6 +16,8 @@ mkdir -p "$RUN_DIR/worker_state" "$RUN_DIR/logs"
 echo "worker=$JOB_INDEX start=$(date -Is)" > "$STATE"
 echo "SPECTRE_BIN=$SPECTRE_BIN" > "$LOG"
 echo "LD_LIBRARY_PATH=${LD_LIBRARY_PATH:-}" >> "$LOG"
+echo "runtime_missing_libs:" >> "$LOG"
+check_spectre_runtime >> "$LOG" 2>&1 || true
 
 if [ ! -d "$TEMPLATE" ]; then
   echo "ERROR: missing template $TEMPLATE. Run ./import_template.sh first." | tee -a "$LOG" >&2

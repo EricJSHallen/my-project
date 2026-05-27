@@ -1,0 +1,8 @@
+generate netlist...
+*Warning*	Additional design variables have been found during netlisting.
+ 		A value is necessary for successful simulation.
+		To simulate, assign values to all design variables with 
+		the Variables->Edit... menu, and use "Netlist and Run".
+      ...successful.
+compose simulator input file...
+      ...successful.

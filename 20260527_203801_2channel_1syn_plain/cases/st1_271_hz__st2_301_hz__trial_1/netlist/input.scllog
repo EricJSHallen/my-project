@@ -1,0 +1,9 @@
+Spectre (R) Circuit Simulator
+Version 23.1.0.327.isr4 64bit -- 9 Dec 2023
+Simulating `input.scs' on bics02 at 4:58:53 PM, Wed May 13, 2026 (process id: 30136).
+H = mpsImport( "spectre" "ipi" "v0.0" ?session "spectre2_32514_2" )
+H->sclSetResultDir( "../../../../../Documents/thesis/sebastian_thesis_repo/processing/cadence_extraction/testoutput/test/psf" )
+H->sclRun( "all" )
+H->sclEcho( "@-@" )
+sclCkt0x10936000 = H->sclGetCircuit(  "" )
+H->sclQuit(  )

@@ -1,3 +1,0 @@
-chosen SPECTRE_CMD=/projects/bics/cadence/installs/SPECTRE231/tools/bin/spectre
-/projects/bics/cadence/installs/SPECTRE231/tools/bin/spectre: symbolic link to `../spectre/bin/spectre'
-Wrapper/script launcher selected; wrote /home/s5117909/Documents/thesis/thesis_codebase/thesis_database/20260527_183313_2channel_1syn_plain/support/spectre_runtime.env

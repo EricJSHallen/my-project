@@ -1,0 +1,4 @@
+parameters m2w m2l m3w m3l m4w m4l m5w m5l m4wtb m4ltb m2wtb m2ltb Vw Vthr \
+    Vtau \
+    pwlFile_st2=__ST2_PWL__ \
+    pwlFile_st1=__ST1_PWL__

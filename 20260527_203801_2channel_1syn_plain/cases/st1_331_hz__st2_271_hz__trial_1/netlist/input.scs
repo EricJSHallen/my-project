@@ -1,0 +1,76 @@
+// Generated for: spectre
+// Generated on: May 27 19:46:18 2026
+// Design library name: sebastian_thesis_pilot
+// Design cell name: synapsedualinputtb
+// Design view name: schematic
+simulator lang=spectre
+include "ade_e.scs"
+global 0
+parameters m2w m2l m3w m3l m4w m4l m5w m5l m4wtb m4ltb m2wtb m2ltb Vw Vthr \
+    Vtau \
+    pwlFile_st2=/home/s5117909/Documents/thesis/thesis_codebase/processing/sim_run_code/spike_train_output/st_2/271_hz/trial_1.pwl \
+    pwlFile_st1=/home/s5117909/Documents/thesis/thesis_codebase/processing/sim_run_code/spike_train_output/st_1/331_hz/trial_1.pwl
+include "/projects/bics/designkits/xfab/xp018/cadence/v8_0/spectre/v8_0_1/lp5mos/config.scs" section=default
+include "/projects/bics/designkits/xfab/xp018/cadence/v8_0/spectre/v8_0_1/lp5mos/param.scs" section=3s
+include "/projects/bics/designkits/xfab/xp018/cadence/v8_0/spectre/v8_0_1/lp5mos/bip.scs" section=tm
+include "/projects/bics/designkits/xfab/xp018/cadence/v8_0/spectre/v8_0_1/lp5mos/cap.scs" section=tm
+include "/projects/bics/designkits/xfab/xp018/cadence/v8_0/spectre/v8_0_1/lp5mos/dio.scs" section=tm
+include "/projects/bics/designkits/xfab/xp018/cadence/v8_0/spectre/v8_0_1/lp5mos/mos.scs" section=tm
+include "/projects/bics/designkits/xfab/xp018/cadence/v8_0/spectre/v8_0_1/lp5mos/res.scs" section=tm
+
+// Library name: sebastian_thesis_pilot
+// Cell name: dynapse1
+// View name: schematic
+subckt dynapse1 Iout Vdd Vin Vtau Vthr
+    M2 (Vdd Vthr Vin 0) ne w=m2w/1 l=m2l as=4.8e-07*(m2w/1) \
+        ad=4.8e-07*(m2w/1) ps=1*2*(4.8e-07+(m2w/1)) pd=2*(4.8e-07+(m2w/1)) \
+        nrs=2.7e-07/(m2w/1) nrd=2.7e-07/(m2w/1) m=(1)*(1) par1=(1)*(1) \
+        xf_subext=0
+    M3 (net1 net1 Vin 0) ne w=m3w/1 l=m3l as=4.8e-07*(m3w/1) \
+        ad=4.8e-07*(m3w/1) ps=1*2*(4.8e-07+(m3w/1)) pd=2*(4.8e-07+(m3w/1)) \
+        nrs=2.7e-07/(m3w/1) nrd=2.7e-07/(m3w/1) m=(1)*(1) par1=(1)*(1) \
+        xf_subext=0
+    M4 (net1 Vtau Vdd 0) pe w=m4w/1 l=m4l as=4.8e-07*(m4w/1) \
+        ad=4.8e-07*(m4w/1) ps=1*2*(4.8e-07+(m4w/1)) pd=2*(4.8e-07+(m4w/1)) \
+        nrs=2.7e-07/(m4w/1) nrd=2.7e-07/(m4w/1) m=(1)*(1) par1=(1)*(1)
+    M5 (Iout net1 Vdd 0) pe w=m5w/1 l=m5l as=4.8e-07*(m5w/1) \
+        ad=4.8e-07*(m5w/1) ps=1*2*(4.8e-07+(m5w/1)) pd=2*(4.8e-07+(m5w/1)) \
+        nrs=2.7e-07/(m5w/1) nrd=2.7e-07/(m5w/1) m=(1)*(1) par1=(1)*(1)
+    C0 (Vdd net1) cmm4 area=5.833e-10 perimeter=98.33u m=1 par1=1
+ends dynapse1
+// End of subcircuit definition.
+
+// Library name: sebastian_thesis_pilot
+// Cell name: synapsedualinputtb
+// View name: schematic
+M4 (Vin Vw net1 0) ne w=m4wtb/1 l=m4ltb as=4.8e-07*(m4wtb/1) \
+        ad=4.8e-07*(m4wtb/1) ps=1*2*(4.8e-07+(m4wtb/1)) \
+        pd=2*(4.8e-07+(m4wtb/1)) nrs=2.7e-07/(m4wtb/1) \
+        nrd=2.7e-07/(m4wtb/1) m=(1)*(1) par1=(1)*(1) xf_subext=0
+M2 (net1 vpre 0 0) ne w=m2wtb/1 l=m2ltb as=4.8e-07*(m2wtb/1) \
+        ad=4.8e-07*(m2wtb/1) ps=1*2*(4.8e-07+(m2wtb/1)) \
+        pd=2*(4.8e-07+(m2wtb/1)) nrs=2.7e-07/(m2wtb/1) \
+        nrd=2.7e-07/(m2wtb/1) m=(1)*(1) par1=(1)*(1) xf_subext=0
+V4 (Vw 0) vsource dc=Vw type=dc
+V3 (Vthr 0) vsource dc=Vthr type=dc
+V2 (Vtau 0) vsource dc=Vtau type=dc
+V1 (Vdd 0) vsource dc=1.8 type=dc
+V14 (vpre1 0) vsource type=pwl file=pwlFile_st2
+V5 (vpre vpre1) vsource type=pwl file=pwlFile_st1
+I56 (0 Vdd Vin Vtau Vthr) dynapse1
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../../../../../Documents/thesis/thesis_codebase/thesis_database/20260527_194336_2channel_1syn_plain/netlist_template/raw/psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=0.5s write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save vpre vpre1 
+saveOptions options save=allpub

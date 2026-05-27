@@ -1,4 +1,0 @@
-parameters m2w m2l m3w m3l m4w m4l m5w m5l m4wtb m4ltb m2wtb m2ltb Vw Vthr \
-    Vtau \
-    pwlFile_st2=/home/s5117909/Documents/thesis/thesis_codebase/processing/sim_run_code/spike_train_output/st_2/211_hz/trial_1.pwl \
-    pwlFile_st1=/home/s5117909/Documents/thesis/thesis_codebase/processing/sim_run_code/spike_train_output/st_1/241_hz/trial_1.pwl

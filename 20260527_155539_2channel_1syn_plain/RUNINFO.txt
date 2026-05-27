@@ -1,4 +1,4 @@
-RUN_DIR=/home/s5117909/Documents/thesis/thesis_codebase/thesis_database/20260527_153127_2channel_1syn_plain
+RUN_DIR=/home/s5117909/Documents/thesis/thesis_codebase/thesis_database/20260527_155539_2channel_1syn_plain
 REPO_DIR=/home/s5117909/Documents/thesis/thesis_codebase
 SPIKE_DIR=/home/s5117909/Documents/thesis/thesis_codebase/processing/sim_run_code/spike_train_output
 NUM_JOBS=4

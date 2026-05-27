@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Source this file before invoking the direct Spectre binary.
-# v4 searches both SPECTRE231 and IC231/other Cadence install trees for the
+# v5 searches both SPECTRE231 and IC231/other Cadence install trees for the
 # shared libraries that the direct Spectre binary needs.
 
 RUN_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -49,7 +49,7 @@ for d in \
 done
 
 # Resolve known missing direct-Spectre libraries from anywhere under the
-# Cadence install tree. This is the important v4 fix.
+# Cadence install tree. This is the important v5 fix.
 if [ -d "$CADENCE_INSTALL_ROOT" ]; then
   while IFS= read -r lib; do
     prepend_ld "$(dirname "$lib")"

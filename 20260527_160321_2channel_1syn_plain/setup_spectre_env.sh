@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Source this file before invoking the direct Spectre binary.
-# v5 searches both SPECTRE231 and IC231/other Cadence install trees for the
+# v6 searches both SPECTRE231 and IC231/other Cadence install trees for the
 # shared libraries that the direct Spectre binary needs.
 
 RUN_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

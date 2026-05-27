@@ -1,0 +1,7 @@
+SPECTRE_BIN=/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/bin/64bit/spectre
+LD_LIBRARY_PATH=/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/lib:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/lib/64bit:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/lib:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/lib/64bit:
+assigned_cases=500
+========== case_id=0 run_name=st1_1_hz__st2_1_hz__trial_1 ==========
+case_dir=/home/s5117909/Documents/thesis/thesis_codebase/thesis_database/20260527_150515_2channel_1syn_plain/cases/st1_1_hz__st2_1_hz__trial_1
+patched_files=3
+/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/bin/64bit/spectre: error while loading shared libraries: libSpectreEH_sh.so: cannot open shared object file: No such file or directory

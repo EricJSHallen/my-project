@@ -1,0 +1,11 @@
+RUN_ID=20260527_142616_2channel_1syn_plain
+REPO_DIR=/home/s5117909/Documents/thesis/thesis_codebase
+SPIKE_DIR=/home/s5117909/Documents/thesis/thesis_codebase/processing/sim_run_code/spike_train_output
+ST1_DIR=/home/s5117909/Documents/thesis/thesis_codebase/processing/sim_run_code/spike_train_output/st_1
+ST2_DIR=/home/s5117909/Documents/thesis/thesis_codebase/processing/sim_run_code/spike_train_output/st_2
+NUM_JOBS=4
+RUN_DIR=/home/s5117909/Documents/thesis/thesis_codebase/thesis_database/20260527_142616_2channel_1syn_plain
+CADENCE_NETLIST_SOURCE=/home/s5117909/simulation/synapsedualinputtb/spectre/schematic/netlist
+ADE_E_SOURCE=/home/s5117909/simulation/synapsedualinputtb/spectre/schematic/netlist/ade_e.scs
+ARCHITECTURE=single_ocean_template_then_parallel_plain_spectre
+TOTAL_CASES=2000

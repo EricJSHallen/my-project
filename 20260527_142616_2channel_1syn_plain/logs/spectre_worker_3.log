@@ -1,0 +1,5 @@
+========== case_id=3 run_name=st1_121_hz__st2_121_hz__trial_4 ==========
+case_dir=/home/s5117909/Documents/thesis/thesis_codebase/thesis_database/20260527_142616_2channel_1syn_plain/cases/st1_121_hz__st2_121_hz__trial_4
+patched_files=3
+./run_spectre_worker.sh: line 67: spectre: command not found
+ERROR: Spectre finished but output_signals.txt was not created

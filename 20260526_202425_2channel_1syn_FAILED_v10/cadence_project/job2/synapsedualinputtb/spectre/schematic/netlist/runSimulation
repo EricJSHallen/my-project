@@ -1,1 +1,0 @@
- spectre  input.scs  +escchars +log ../../../../../../output_2channel_1syn_data/st1_31_hz__st2_31_hz__trial_2/psf/spectre.out  -format psfxl -raw ../../../../../../output_2channel_1syn_data/st1_31_hz__st2_31_hz__trial_2/psf   +aps +mt +lqtimeout 900 -maxw 5 -maxn 5 -env ade +adespetkn=adespe ++aps +mt=4   

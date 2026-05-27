@@ -1,0 +1,4 @@
+simulator lang=spectre
+include "cmm4.scs"
+include "ne.scs"
+include "pe.scs"

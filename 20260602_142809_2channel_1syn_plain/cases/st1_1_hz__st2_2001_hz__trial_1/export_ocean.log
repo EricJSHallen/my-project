@@ -1,0 +1,181 @@
+CASE_DIR=/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_1_hz__st2_2001_hz__trial_1
+OCN=/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/ocn/export_psf_to_txt.ocn
+CADENCE_EXPORT_LAUNCHER=/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/bin/ocean
+LD_LIBRARY_PATH=/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/bin:/projects/bics/cadence/installs/IC231/tools.lnx86/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib/64bit:/projects/bics/cadence/installs/IC231/tools/lib:/projects/bics/cadence/installs/IC231/tools/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/bin:/projects/bics/cadence/installs/IC231/tools.lnx86/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib/64bit:/projects/bics/cadence/installs/IC231/tools/lib:/projects/bics/cadence/installs/IC231/tools/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/bin:/projects/bics/cadence/installs/IC231/tools.lnx86/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib/64bit:/projects/bics/cadence/installs/IC231/tools/lib:/projects/bics/cadence/installs/IC231/tools/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/bin:/projects/bics/cadence/installs/IC231/tools.lnx86/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib/64bit:/projects/bics/cadence/installs/IC231/tools/lib:/projects/bics/cadence/installs/IC231/tools/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/bin:/projects/bics/cadence/installs/IC231/tools/bin:/projects/bics/cadence/installs/IC231/bin:/projects/bics/cadence/installs/IC231/tools/lib:/projects/bics/cadence/installs/IC231/tools/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib/64bit:/projects/bics/cadence/installs/IC231/tools/dfII/lib:/projects/bics/cadence/installs/IC231/tools/dfII/lib/64bit:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/lib:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/lib/64bit:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/lib:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/lib/64bit:/projects/bics/cadence/installs/SPECTRE231/oa_v22.61.002/lib/linux_rhel70_gcc93x_64/opt:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/lib/64bit:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/lib:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/lib/64bit:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/lib:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/lib/64bit:
+ldd missing before launch:
+cdsXvfb-run[26339]: WARNING: xauth failed to extract authorization for all the displays: :1003.0.
+cdsXvfb-run[26339]: WARNING: This may prevent opening graphical windows in the original user display.
+*WARNING* file /home/s5117909/CDS.log File is already locked by some other process.
+*WARNING* file /home/s5117909/CDS.log.1 File is already locked by some other process.
+COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+          (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
+                         Reproduced with permission.
+
+This Cadence Design Systems program and online documentation are
+proprietary/confidential information and may be disclosed/used only
+as authorized in a license agreement controlling such use and disclosure.
+
+          RESTRICTED RIGHTS NOTICE (SHORT FORM)
+Use/reproduction/disclosure is subject to restriction
+set forth at FAR 1252.227-19 or its equivalent.
+Loading geView.cxt 
+Loading menuBuilder.cxt 
+Loading im.cxt 
+Loading schView.cxt 
+Loading selectSv.cxt 
+Loading wireEdit.cxt 
+Loading pte2.cxt 
+Loading xlUI.cxt 
+Loading auCore.cxt 
+Loading vhdl.cxt 
+Loading seismic.cxt 
+Loading ci.cxt 
+Loading layers.cxt 
+Loading drv.cxt 
+Loading ams.cxt 
+Loading adexlDM.cxt 
+Loading cpf.cxt 
+Loading cli.cxt 
+Loading lp.cxt 
+Loading sipLayout.cxt 
+Loading diagCenter.cxt 
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.03s.
+Loading dal.cxt 
+Loading awv.cxt 
+Loading oasis.cxt 
+Loading vdsil.cxt 
+Loading analog.cxt 
+Loading asimenv.cxt 
+Loading spectrei.cxt 
+Loading adexlCore.cxt 
+Loading socket.cxt 
+Loading par.cxt 
+Loading alvs.cxt 
+Loading caa.cxt 
+Loading amps.cxt 
+Loading adexl.cxt 
+Loading lx.cxt 
+Loading pe.cxt 
+Loading lce.cxt 
+Loading le.cxt 
+Loading drdEdit.cxt 
+Loading rte.cxt 
+Loading te.cxt 
+Loading schHDL.cxt 
+Loading devCheck.cxt 
+Loading relXpert.cxt 
+Loading simui.cxt 
+Loading viva.cxt 
+WARNING (OCN-6055): The output '/I56/Iout' you selected does not exist.  Type outputs() to see
+        the list of available outputs or type help('i) for more information on the 'i' command.
+Using current signal /I56/Iout
+WARNING (OCN-6055): The output '/I56/iout' you selected does not exist.  Type outputs() to see
+        the list of available outputs or type help('i) for more information on the 'i' command.
+Using current signal /I56/iout
+WARNING (OCN-6055): The output '/I56/1' you selected does not exist.  Type outputs() to see
+        the list of available outputs or type help('i) for more information on the 'i' command.
+Using current signal /I56/1
+*Error* Could not read I56 output current. Check that input.scs contains currents=all and that the I56 port name is Iout.
+
+*Error* load: error while loading file - "/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/ocn/export_psf_to_txt.ocn" at line 36
+> Loading tilp.cxt 
+Loading validator.cxt 
+Loading vrf.cxt 
+Loading multiTechPlugin.cxt 
+Loading exportDie.cxt 
+
+6	st1_1_hz__st2_6001_hz__trial_1	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_1/1_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_2/6001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_1_hz__st2_6001_hz__trial_1
+ 	                              	                                                                                                                ^^^
+SYNTAX ERROR found at line 1 column 146 of file *stdin*
+*Error* lineread/read: syntax error encountered in input
+> 
+10	st1_1001_hz__st2_1001_hz__trial_1	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_1/1001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_2/1001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_1001_hz__st2_1001_hz__trial_1
+  	                                 	                                                                                                                   ^^^
+SYNTAX ERROR found at line 2 column 153 of file *stdin*
+*Error* lineread/read: syntax error encountered in input
+> 
+14	st1_1001_hz__st2_5001_hz__trial_1	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_1/1001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_2/5001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_1001_hz__st2_5001_hz__trial_1
+  	                                 	                                                                                                                   ^^^
+SYNTAX ERROR found at line 3 column 153 of file *stdin*
+*Error* lineread/read: syntax error encountered in input
+> 
+18	st1_2001_hz__st2_1_hz__trial_1	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_1/2001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_2/1_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_2001_hz__st2_1_hz__trial_1
+  	                              	                                                                                                                   ^^^
+SYNTAX ERROR found at line 4 column 150 of file *stdin*
+*Error* lineread/read: syntax error encountered in input
+> 
+22	st1_2001_hz__st2_4001_hz__trial_1	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_1/2001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_2/4001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_2001_hz__st2_4001_hz__trial_1
+  	                                 	                                                                                                                   ^^^
+SYNTAX ERROR found at line 5 column 153 of file *stdin*
+*Error* lineread/read: syntax error encountered in input
+> 
+26	st1_2001_hz__st2_8001_hz__trial_1	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_1/2001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_2/8001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_2001_hz__st2_8001_hz__trial_1
+  	                                 	                                                                                                                   ^^^
+SYNTAX ERROR found at line 6 column 153 of file *stdin*
+*Error* lineread/read: syntax error encountered in input
+> 
+30	st1_3001_hz__st2_3001_hz__trial_1	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_1/3001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_2/3001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_3001_hz__st2_3001_hz__trial_1
+  	                                 	                                                                                                                   ^^^
+SYNTAX ERROR found at line 7 column 153 of file *stdin*
+*Error* lineread/read: syntax error encountered in input
+> 
+34	st1_3001_hz__st2_7001_hz__trial_1	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_1/3001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_2/7001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_3001_hz__st2_7001_hz__trial_1
+  	                                 	                                                                                                                   ^^^
+SYNTAX ERROR found at line 8 column 153 of file *stdin*
+*Error* lineread/read: syntax error encountered in input
+> 
+38	st1_4001_hz__st2_2001_hz__trial_1	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_1/4001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_2/2001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_4001_hz__st2_2001_hz__trial_1
+  	                                 	                                                                                                                   ^^^
+SYNTAX ERROR found at line 9 column 153 of file *stdin*
+*Error* lineread/read: syntax error encountered in input
+> 
+42	st1_4001_hz__st2_6001_hz__trial_1	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_1/4001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_2/6001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_4001_hz__st2_6001_hz__trial_1
+  	                                 	                                                                                                                   ^^^
+SYNTAX ERROR found at line 10 column 153 of file *stdin*
+*Error* lineread/read: syntax error encountered in input
+> 
+46	st1_5001_hz__st2_1001_hz__trial_1	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_1/5001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_2/1001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_5001_hz__st2_1001_hz__trial_1
+  	                                 	                                                                                                                   ^^^
+SYNTAX ERROR found at line 11 column 153 of file *stdin*
+*Error* lineread/read: syntax error encountered in input
+> 
+50	st1_5001_hz__st2_5001_hz__trial_1	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_1/5001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_2/5001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_5001_hz__st2_5001_hz__trial_1
+  	                                 	                                                                                                                   ^^^
+SYNTAX ERROR found at line 12 column 153 of file *stdin*
+*Error* lineread/read: syntax error encountered in input
+> 
+54	st1_6001_hz__st2_1_hz__trial_1	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_1/6001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_2/1_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_6001_hz__st2_1_hz__trial_1
+  	                              	                                                                                                                   ^^^
+SYNTAX ERROR found at line 13 column 150 of file *stdin*
+*Error* lineread/read: syntax error encountered in input
+> 
+58	st1_6001_hz__st2_4001_hz__trial_1	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_1/6001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_2/4001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_6001_hz__st2_4001_hz__trial_1
+  	                                 	                                                                                                                   ^^^
+SYNTAX ERROR found at line 14 column 153 of file *stdin*
+*Error* lineread/read: syntax error encountered in input
+> 
+62	st1_6001_hz__st2_8001_hz__trial_1	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_1/6001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_2/8001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_6001_hz__st2_8001_hz__trial_1
+  	                                 	                                                                                                                   ^^^
+SYNTAX ERROR found at line 15 column 153 of file *stdin*
+*Error* lineread/read: syntax error encountered in input
+> 
+66	st1_7001_hz__st2_3001_hz__trial_1	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_1/7001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_2/3001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_7001_hz__st2_3001_hz__trial_1
+  	                                 	                                                                                                                   ^^^
+SYNTAX ERROR found at line 16 column 153 of file *stdin*
+*Error* lineread/read: syntax error encountered in input
+> 
+70	st1_7001_hz__st2_7001_hz__trial_1	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_1/7001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_2/7001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_7001_hz__st2_7001_hz__trial_1
+  	                                 	                                                                                                                   ^^^
+SYNTAX ERROR found at line 17 column 153 of file *stdin*
+*Error* lineread/read: syntax error encountered in input
+> 
+74	st1_8001_hz__st2_2001_hz__trial_1	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_1/8001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_2/2001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_8001_hz__st2_2001_hz__trial_1
+  	                                 	                                                                                                                   ^^^
+SYNTAX ERROR found at line 18 column 153 of file *stdin*
+*Error* lineread/read: syntax error encountered in input
+> 
+78	st1_8001_hz__st2_6001_hz__trial_1	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_1/8001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output/st_2/6001_hz/trial_1.pwl	/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_142809_2channel_1syn_plain/cases/st1_8001_hz__st2_6001_hz__trial_1
+  	                                 	                                                                                                                   ^^^
+SYNTAX ERROR found at line 19 column 153 of file *stdin*
+*Error* lineread/read: syntax error encountered in input
+> 

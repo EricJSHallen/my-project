@@ -1,0 +1,6 @@
+setShellEnvVar("CAD_REPO_DIR=/home/s5117909/Documents/thesis/thesis_codebase")
+setShellEnvVar("CAD_EXP_DIR=/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep")
+setShellEnvVar("CAD_SPIKE_DIR=/home/s5117909/Documents/thesis/thesis_codebase/experiments/frequency_sweep/input_data/spike_train_output")
+setShellEnvVar("CAD_TEMPLATE_DIR=/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_152337_2channel_1syn_plain/manual_template_ocean_result")
+setShellEnvVar("CAD_PROJECT_DIR=/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_152337_2channel_1syn_plain/cadence_template_project")
+load("/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_152337_2channel_1syn_plain/ocn/make_spectre_template_reorg_v2.ocn")

@@ -1,0 +1,5 @@
+caseDir=/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_151031_2channel_1syn_plain/cases/st1_1_hz__st2_7001_hz__trial_1
+psfDir=/home/s5117909/Documents/thesis/thesis_codebase/database/20260602_151031_2channel_1syn_plain/cases/st1_1_hz__st2_7001_hz__trial_1/psf
+trying i(VSENSE_I56:p)
+success i(VSENSE_I56:p)
+chosenCurrentName=i(VSENSE_I56:p)

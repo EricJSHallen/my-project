@@ -1,0 +1,7 @@
+/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/bin
+/projects/bics/cadence/installs/IC231/tools.lnx86/lib
+/projects/bics/cadence/installs/IC231/tools.lnx86/lib/64bit
+/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib
+/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib/64bit
+/projects/bics/cadence/installs/IC231/tools/lib
+/projects/bics/cadence/installs/IC231/tools/lib/64bit

@@ -1,0 +1,19 @@
+
+// Library name: sebastian_thesis_pilot
+// Cell name: synapsedualinputtb
+// View name: schematic
+M4 (Vin Vw net1 0) ne w=m4wtb/1 l=m4ltb as=4.8e-07*(m4wtb/1) \
+        ad=4.8e-07*(m4wtb/1) ps=1*2*(4.8e-07+(m4wtb/1)) \
+        pd=2*(4.8e-07+(m4wtb/1)) nrs=2.7e-07/(m4wtb/1) \
+        nrd=2.7e-07/(m4wtb/1) m=(1)*(1) par1=(1)*(1) xf_subext=0
+M2 (net1 vpre 0 0) ne w=m2wtb/1 l=m2ltb as=4.8e-07*(m2wtb/1) \
+        ad=4.8e-07*(m2wtb/1) ps=1*2*(4.8e-07+(m2wtb/1)) \
+        pd=2*(4.8e-07+(m2wtb/1)) nrs=2.7e-07/(m2wtb/1) \
+        nrd=2.7e-07/(m2wtb/1) m=(1)*(1) par1=(1)*(1) xf_subext=0
+V4 (Vw 0) vsource dc=Vw type=dc
+V3 (Vthr 0) vsource dc=Vthr type=dc
+V2 (Vtau 0) vsource dc=Vtau type=dc
+V1 (Vdd 0) vsource dc=1.8 type=dc
+V14 (vpre1 0) vsource type=pwl file=pwlFile_st2
+V5 (vpre vpre1) vsource type=pwl file=pwlFile_st1
+I56 (0 Vdd Vin Vtau Vthr) dynapse1

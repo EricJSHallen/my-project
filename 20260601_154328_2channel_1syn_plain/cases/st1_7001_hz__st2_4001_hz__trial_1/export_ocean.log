@@ -1,0 +1,73 @@
+CASE_DIR=/home/s5117909/Documents/thesis/thesis_codebase/database/20260601_154328_2channel_1syn_plain/cases/st1_7001_hz__st2_4001_hz__trial_1
+OCN=/home/s5117909/Documents/thesis/thesis_codebase/database/20260601_154328_2channel_1syn_plain/ocn/export_psf_to_txt.ocn
+CADENCE_EXPORT_LAUNCHER=/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/bin/ocean
+IC_ROOT=/projects/bics/cadence/installs/IC231
+PATH=/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/bin:/projects/bics/cadence/installs/SPECTRE231/tools/bin:/projects/bics/cadence/installs/SPECTRE231/tools/bin:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/bin:/projects/bics/cadence/installs/SPECTRE231/tools/bin:/projects/bics/cadence/installs/SPECTRE231/tools/bin:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/bin:/projects/bics/cadence/installs/SPECTRE231/tools/bin:/projects/bics/cadence/installs/SPECTRE231/tools/bin:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/bin:/projects/bics/cadence/installs/SPECTRE231/tools/bin:/projects/bics/cadence/installs/SPECTRE231/tools/bin:/projects/bics/cadence/installs/SPECTRE231/tools/bin:/projects/bics/cadence/installs/SPECTRE231/tools/bin:/projects/bics/cadence/installs/SPECTRE231/tools/bin:/projects/bics/cadence/installs/SPECTRE231/tools/bin:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/bin/64bit:/projects/bics/NX/bin:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/bin:/usr/bin:/usr/X11R6/bin:/opt/netapps/bin:/opt/puppetlabs/bin:/opt/netapps/bin
+LD_LIBRARY_PATH=/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/bin:/projects/bics/cadence/installs/IC231/tools/bin:/projects/bics/cadence/installs/IC231/bin:/projects/bics/cadence/installs/IC231/tools/lib:/projects/bics/cadence/installs/IC231/tools/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib/64bit:/projects/bics/cadence/installs/IC231/tools/dfII/lib:/projects/bics/cadence/installs/IC231/tools/dfII/lib/64bit:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/lib:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/lib/64bit:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/lib:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/bin:/projects/bics/cadence/installs/IC231/tools/bin:/projects/bics/cadence/installs/IC231/bin:/projects/bics/cadence/installs/IC231/tools/lib:/projects/bics/cadence/installs/IC231/tools/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib/64bit:/projects/bics/cadence/installs/IC231/tools/dfII/lib:/projects/bics/cadence/installs/IC231/tools/dfII/lib/64bit:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/lib:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/lib/64bit:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/lib:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/bin:/projects/bics/cadence/installs/IC231/tools/bin:/projects/bics/cadence/installs/IC231/bin:/projects/bics/cadence/installs/IC231/tools/lib:/projects/bics/cadence/installs/IC231/tools/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib/64bit:/projects/bics/cadence/installs/IC231/tools/dfII/lib:/projects/bics/cadence/installs/IC231/tools/dfII/lib/64bit:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/lib:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/lib/64bit:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/lib:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/bin:/projects/bics/cadence/installs/IC231/tools/bin:/projects/bics/cadence/installs/IC231/bin:/projects/bics/cadence/installs/IC231/tools/lib:/projects/bics/cadence/installs/IC231/tools/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib/64bit:/projects/bics/cadence/installs/IC231/tools/dfII/lib:/projects/bics/cadence/installs/IC231/tools/dfII/lib/64bit:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/lib:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/lib/64bit:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/lib:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/lib/64bit:/projects/bics/cadence/installs/SPECTRE231/oa_v22.61.002/lib/linux_rhel70_gcc93x_64/opt:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/dfII/lib/64bit:/projects/bics/cadence/installs/IC231/tools.lnx86/lib:/projects/bics/cadence/installs/IC231/tools.lnx86/lib/64bit:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/lib:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/lib/64bit:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/lib:/projects/bics/cadence/installs/SPECTRE231/tools.lnx86/spectre/lib/64bit:
+ldd missing before launch:
+*WARNING* file /home/s5117909/CDS.log File is already locked by some other process.
+COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+          (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
+                         Reproduced with permission.
+
+This Cadence Design Systems program and online documentation are
+proprietary/confidential information and may be disclosed/used only
+as authorized in a license agreement controlling such use and disclosure.
+
+          RESTRICTED RIGHTS NOTICE (SHORT FORM)
+Use/reproduction/disclosure is subject to restriction
+set forth at FAR 1252.227-19 or its equivalent.
+Loading geView.cxt 
+Loading menuBuilder.cxt 
+Loading im.cxt 
+Loading schView.cxt 
+Loading selectSv.cxt 
+Loading wireEdit.cxt 
+Loading pte2.cxt 
+Loading xlUI.cxt 
+Loading auCore.cxt 
+Loading vhdl.cxt 
+Loading seismic.cxt 
+Loading ci.cxt 
+Loading layers.cxt 
+Loading drv.cxt 
+Loading ams.cxt 
+Loading adexlDM.cxt 
+Loading cpf.cxt 
+Loading cli.cxt 
+Loading lp.cxt 
+Loading sipLayout.cxt 
+Loading diagCenter.cxt 
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.03s.
+Loading dal.cxt 
+Loading awv.cxt 
+Loading oasis.cxt 
+Loading vdsil.cxt 
+Loading analog.cxt 
+Loading asimenv.cxt 
+Loading spectrei.cxt 
+Loading adexlCore.cxt 
+Loading socket.cxt 
+Loading par.cxt 
+Loading alvs.cxt 
+Loading caa.cxt 
+Loading amps.cxt 
+Loading adexl.cxt 
+Loading lx.cxt 
+Loading pe.cxt 
+Loading lce.cxt 
+Loading le.cxt 
+Loading drdEdit.cxt 
+Loading rte.cxt 
+Loading te.cxt 
+Loading schHDL.cxt 
+Loading devCheck.cxt 
+Loading relXpert.cxt 
+Loading simui.cxt 
+Loading viva.cxt 
+WARNING (OCN-6055): The output '/I56/Iout' you selected does not exist.  Type outputs() to see
+        the list of available outputs or type help('i) for more information on the 'i' command.
+WARNING (PRINT-1048): Printing can become very slow because the data exceeds 10000 points. You can
+             cancel this command and print the data to a file using the command v("/vpre" ?resultsDir "/home/s5117909/Documents/thesis/thesis_codebase/database/20260601_154328_2channel_1syn_plain/cases/st1_7001_hz__st2_4001_hz__trial_1/psf" ?result "tran") v("/vpre1" ?resultsDir "/home/s5117909/Documents/thesis/thesis_codebase/database/20260601_154328_2channel_1syn_plain/cases/st1_7001_hz__st2_4001_hz__trial_1/psf" ?result "tran") ?output "./myOutFile" ?numberNotation 'none).
+Wrote /home/s5117909/Documents/thesis/thesis_codebase/database/20260601_154328_2channel_1syn_plain/cases/st1_7001_hz__st2_4001_hz__trial_1/output_signals.txt
+

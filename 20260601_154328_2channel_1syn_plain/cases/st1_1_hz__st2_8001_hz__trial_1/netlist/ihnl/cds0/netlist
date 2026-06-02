@@ -1,0 +1,17 @@
+    M2 (Vdd Vthr Vin 0) ne w=m2w/1 l=m2l as=4.8e-07*(m2w/1) \
+        ad=4.8e-07*(m2w/1) ps=1*2*(4.8e-07+(m2w/1)) pd=2*(4.8e-07+(m2w/1)) \
+        nrs=2.7e-07/(m2w/1) nrd=2.7e-07/(m2w/1) m=(1)*(1) par1=(1)*(1) \
+        xf_subext=0
+    M3 (net1 net1 Vin 0) ne w=m3w/1 l=m3l as=4.8e-07*(m3w/1) \
+        ad=4.8e-07*(m3w/1) ps=1*2*(4.8e-07+(m3w/1)) pd=2*(4.8e-07+(m3w/1)) \
+        nrs=2.7e-07/(m3w/1) nrd=2.7e-07/(m3w/1) m=(1)*(1) par1=(1)*(1) \
+        xf_subext=0
+    M4 (net1 Vtau Vdd 0) pe w=m4w/1 l=m4l as=4.8e-07*(m4w/1) \
+        ad=4.8e-07*(m4w/1) ps=1*2*(4.8e-07+(m4w/1)) pd=2*(4.8e-07+(m4w/1)) \
+        nrs=2.7e-07/(m4w/1) nrd=2.7e-07/(m4w/1) m=(1)*(1) par1=(1)*(1)
+    M5 (Iout net1 Vdd 0) pe w=m5w/1 l=m5l as=4.8e-07*(m5w/1) \
+        ad=4.8e-07*(m5w/1) ps=1*2*(4.8e-07+(m5w/1)) pd=2*(4.8e-07+(m5w/1)) \
+        nrs=2.7e-07/(m5w/1) nrd=2.7e-07/(m5w/1) m=(1)*(1) par1=(1)*(1)
+    C0 (Vdd net1) cmm4 area=5.833e-10 perimeter=98.33u m=1 par1=1
+ends dynapse1
+// End of subcircuit definition.

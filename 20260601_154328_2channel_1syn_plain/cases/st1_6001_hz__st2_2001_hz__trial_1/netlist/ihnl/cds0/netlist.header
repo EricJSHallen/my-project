@@ -1,0 +1,5 @@
+
+// Library name: sebastian_thesis_pilot
+// Cell name: dynapse1
+// View name: schematic
+subckt dynapse1 Iout Vdd Vin Vtau Vthr

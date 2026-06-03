@@ -1,0 +1,8 @@
+caseDir=/home/s5117909/Documents/thesis/thesis_codebase/database/20260603_152350_2syn_2tail_plain/cases/st1_1001_hz__st2_7001_hz__trial_1
+psfDir=/home/s5117909/Documents/thesis/thesis_codebase/database/20260603_152350_2syn_2tail_plain/cases/st1_1001_hz__st2_7001_hz__trial_1/psf
+trying I172 i(VSENSE_I172:p)
+success I172 i(VSENSE_I172:p)
+trying I56 i(VSENSE_I56:p)
+success I56 i(VSENSE_I56:p)
+chosenCurrentName172=i(VSENSE_I172:p)
+chosenCurrentName56=i(VSENSE_I56:p)

@@ -1,0 +1,8 @@
+// Generated for: spectre
+// Generated on: May 15 16:12:14 2026
+// Design library name: sebastian_thesis_pilot
+// Design cell name: dynapsetb1
+// Design view name: schematic
+simulator lang=spectre
+include "ade_e.scs"
+global 0

@@ -1,0 +1,6 @@
+HEADER
+"PSFversion" "1.00"
+"I56n I172n" "dynapse1"
+"V4n V3n V2n V1n" "analogLib_vdc_spectre"
+"M0n M4n M2n M1n" "PRIMLIB_ne_spectre"
+"V14n V5n" "analogLib_vpwlf_spectre"

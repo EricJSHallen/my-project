@@ -1,0 +1,4 @@
+OCEAN export attempt 3/8 for /home/s5117909/Documents/thesis/thesis_codebase/database/20260603_190010_2syn_2tail_plain/cases/st1_1001_hz__st2_1_hz__trial_1
+ERROR: OCEAN_CMD is set but not executable/found: alias xp018v='xp018 ; xkit&'
+timeout: failed to run command 'alias xp018v=\'xp018 ; xkit&\'': No such file or directory
+Retryable OCEAN export failure; sleeping 60s before retry.

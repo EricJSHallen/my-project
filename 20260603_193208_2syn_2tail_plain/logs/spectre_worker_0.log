@@ -1,0 +1,4 @@
+Worker 0 started at Wed Jun  3 19:33:12 CEST 2026
+RUN case_id=0 run_name=st1_1001_hz__st2_1001_hz__trial_1
+Waiting for OCEAN export lock (60s waited, lock age 61s, owner_pid=3409, owner_case=/home/s5117909/Documents/thesis/thesis_codebase/database/20260603_193208_2syn_2tail_plain/cases/st1_1001_hz__st2_1_hz__trial_1)
+Waiting for OCEAN export lock (120s waited, lock age 121s, owner_pid=3409, owner_case=/home/s5117909/Documents/thesis/thesis_codebase/database/20260603_193208_2syn_2tail_plain/cases/st1_1001_hz__st2_1_hz__trial_1)

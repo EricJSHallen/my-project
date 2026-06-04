@@ -1,0 +1,144 @@
+; export_psf_to_txt.ocn - v12_2syn_2tail
+; Exports two currents and two voltages from a plain-Spectre PSF directory.
+; Column order: iout_172 iout_56 vpre vpre1
+
+caseDir = getShellEnvVar("CAD_CASE_DIR")
+unless(caseDir
+  error("CAD_CASE_DIR is not set.\n")
+)
+
+psfDir   = strcat(caseDir "/psf")
+outTmp   = strcat(caseDir "/output_signals.txt.tmp")
+outFile  = strcat(caseDir "/output_signals.txt")
+diagFile = strcat(caseDir "/current_probe_export_diagnostics.txt")
+
+unless(isDir(psfDir)
+  error("Cannot find PSF directory: %s\n" psfDir)
+)
+
+openResults(psfDir)
+selectResult('tran)
+
+diagPort = outfile(diagFile)
+fprintf(diagPort "caseDir=%s\n" caseDir)
+fprintf(diagPort "psfDir=%s\n" psfDir)
+
+iout_172 = nil
+iout_56  = nil
+chosenCurrentName172 = nil
+chosenCurrentName56  = nil
+
+; --- I172 candidates ---------------------------------------------------------
+foreach(sig list(
+    "VSENSE_I172:p" "VSENSE_I172:n" "VSENSE_I172:PLUS" "VSENSE_I172:MINUS" "VSENSE_I172:1" "VSENSE_I172:2"
+    "/VSENSE_I172/p" "/VSENSE_I172/n" "/VSENSE_I172/PLUS" "/VSENSE_I172/MINUS" "/VSENSE_I172/1" "/VSENSE_I172/2"
+    "/I172/Iout" "/I172/iout" "/I172/1" "I172:Iout" "I172:iout" "I172:1"
+  )
+  when(iout_172 == nil
+    fprintf(diagPort "trying I172 i(%s)\n" sig)
+    tmp = errset(i(sig) nil)
+    when(tmp && car(tmp)
+      iout_172 = car(tmp)
+      chosenCurrentName172 = strcat("i(" sig ")")
+      fprintf(diagPort "success I172 %s\n" chosenCurrentName172)
+    )
+    unless(tmp && car(tmp)
+      fprintf(diagPort "no data I172 i(%s)\n" sig)
+    )
+  )
+)
+foreach(sig list(
+    "VSENSE_I172:p" "VSENSE_I172:n" "VSENSE_I172:PLUS" "VSENSE_I172:MINUS" "VSENSE_I172:1" "VSENSE_I172:2"
+    "/VSENSE_I172/p" "/VSENSE_I172/n" "/VSENSE_I172/PLUS" "/VSENSE_I172/MINUS" "/VSENSE_I172/1" "/VSENSE_I172/2"
+    "I(VSENSE_I172:p)" "I(VSENSE_I172:n)" "i(VSENSE_I172:p)" "i(VSENSE_I172:n)"
+    "/I172/Iout" "/I172/iout" "/I172/1" "I172:Iout" "I172:iout" "I172:1"
+  )
+  when(iout_172 == nil
+    fprintf(diagPort "trying I172 getData(%s)\n" sig)
+    tmp = errset(getData(sig) nil)
+    when(tmp && car(tmp)
+      iout_172 = car(tmp)
+      chosenCurrentName172 = strcat("getData(" sig ")")
+      fprintf(diagPort "success I172 %s\n" chosenCurrentName172)
+    )
+    unless(tmp && car(tmp)
+      fprintf(diagPort "no data I172 getData(%s)\n" sig)
+    )
+  )
+)
+
+; --- I56 candidates ----------------------------------------------------------
+foreach(sig list(
+    "VSENSE_I56:p" "VSENSE_I56:n" "VSENSE_I56:PLUS" "VSENSE_I56:MINUS" "VSENSE_I56:1" "VSENSE_I56:2"
+    "/VSENSE_I56/p" "/VSENSE_I56/n" "/VSENSE_I56/PLUS" "/VSENSE_I56/MINUS" "/VSENSE_I56/1" "/VSENSE_I56/2"
+    "/I56/Iout" "/I56/iout" "/I56/1" "I56:Iout" "I56:iout" "I56:1"
+  )
+  when(iout_56 == nil
+    fprintf(diagPort "trying I56 i(%s)\n" sig)
+    tmp = errset(i(sig) nil)
+    when(tmp && car(tmp)
+      iout_56 = car(tmp)
+      chosenCurrentName56 = strcat("i(" sig ")")
+      fprintf(diagPort "success I56 %s\n" chosenCurrentName56)
+    )
+    unless(tmp && car(tmp)
+      fprintf(diagPort "no data I56 i(%s)\n" sig)
+    )
+  )
+)
+foreach(sig list(
+    "VSENSE_I56:p" "VSENSE_I56:n" "VSENSE_I56:PLUS" "VSENSE_I56:MINUS" "VSENSE_I56:1" "VSENSE_I56:2"
+    "/VSENSE_I56/p" "/VSENSE_I56/n" "/VSENSE_I56/PLUS" "/VSENSE_I56/MINUS" "/VSENSE_I56/1" "/VSENSE_I56/2"
+    "I(VSENSE_I56:p)" "I(VSENSE_I56:n)" "i(VSENSE_I56:p)" "i(VSENSE_I56:n)"
+    "/I56/Iout" "/I56/iout" "/I56/1" "I56:Iout" "I56:iout" "I56:1"
+  )
+  when(iout_56 == nil
+    fprintf(diagPort "trying I56 getData(%s)\n" sig)
+    tmp = errset(getData(sig) nil)
+    when(tmp && car(tmp)
+      iout_56 = car(tmp)
+      chosenCurrentName56 = strcat("getData(" sig ")")
+      fprintf(diagPort "success I56 %s\n" chosenCurrentName56)
+    )
+    unless(tmp && car(tmp)
+      fprintf(diagPort "no data I56 getData(%s)\n" sig)
+    )
+  )
+)
+
+unless(iout_172
+  fprintf(diagPort "FAILED: no I172 current candidate succeeded.\n")
+  close(diagPort)
+  closeResults(psfDir)
+  batchExitStr = getShellEnvVar("CAD_BATCH_EXIT")
+  when(batchExitStr == "1" exit())
+)
+
+unless(iout_56
+  fprintf(diagPort "FAILED: no I56 current candidate succeeded.\n")
+  close(diagPort)
+  closeResults(psfDir)
+  batchExitStr = getShellEnvVar("CAD_BATCH_EXIT")
+  when(batchExitStr == "1" exit())
+)
+
+vpre  = v("/vpre")
+vpre1 = v("/vpre1")
+
+when(isFile(outTmp)
+  system(strcat("rm -f \"" outTmp "\""))
+)
+
+fprintf(diagPort "chosenCurrentName172=%s\n" chosenCurrentName172)
+fprintf(diagPort "chosenCurrentName56=%s\n" chosenCurrentName56)
+close(diagPort)
+
+ocnPrint(?output outTmp ?precision 10 ?numSpaces 1 iout_172 iout_56 vpre vpre1)
+system(strcat("mv -f \"" outTmp "\" \"" outFile "\""))
+closeResults(psfDir)
+printf("Wrote %s using %s and %s\n" outFile chosenCurrentName172 chosenCurrentName56)
+
+batchExitStr = getShellEnvVar("CAD_BATCH_EXIT")
+when(batchExitStr == "1"
+  exit()
+)

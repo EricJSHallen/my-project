@@ -1,0 +1,4 @@
+export SPECTRE_CMD="/projects/bics/cadence/installs/SPECTRE231/tools/bin/spectre"
+export CADENCE_INSTALL_ROOT="/projects/bics/cadence/installs"
+export OCEAN_CMD="/projects/bics/cadence/installs/ICADVM201/tools.lnx86/dfII/bin/ocean"
+export OCEAN_RUNNER_MODE="direct"
